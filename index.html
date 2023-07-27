@@ -17,18 +17,14 @@
     .lato {
       font-family: 'Lato', sans-serif;
     }
-
-    .header {
-      @media (min-width: 640px) display: none;
-    }
   </style>
 </head>
 <!-- body section starts here -->
-<body class="lato">
+<body class="lato" >
 
   <!-- header section starts here -->
-  <header>
-    <nav class=" lg:max-w-6xl mx-auto bg-[#F85559] rounded-full my-10 flex items-center justify-between px-10 header">
+  <header class="hidden md:block lg:block">
+    <nav class=" lg:max-w-6xl mx-auto bg-[#F85559] rounded-full my-10 flex items-center justify-between px-10 ">
       <div class=" flex gap-5 p-6 font-semibold list-none text-white">
         <li><a class="hover:text-black" href="">Home</a></li>
         <li><a class="hover:text-black" href="">About Us</a></li>
@@ -351,9 +347,7 @@
             in a piece of
             classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 md:gap-5 lg:gap-10 justify-center md:p-5 lg:5 p-2">
-
-
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3  md:gap-5 lg:gap-10 justify-center md:p-5 lg:5 p-2">
 
           <!-- cards starts here -->
           <div class="p-2 md:p-5 lg:p-7 rounded shadow-sm space-y-2 text-center">
@@ -423,7 +417,7 @@
           classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
       <div
-        class="grid grid-rows-1 md:grid-rows-3 grid-rows-3 md:grid-cols-3 lg:grid-cols-3 grid-cols-1 max-w-7xl mx-auto p-10 gap-8">
+        class="grid grid-rows-1 grid-cols-1 md:grid-rows-1 grid-rows-3 md:grid-cols-1 lg:grid-cols-3  max-w-7xl mx-auto p-10 gap-8">
         <!-- row-1 -->
         <div class="space-y-2 ">
           <h4 class="font-extrabold text-2xl hover:text-red-600">Dedicated Team</h4>
@@ -431,7 +425,7 @@
           <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
         <!-- row-2 -->
-        <div class="space-y-2 row-span-3 w-full mt-4">
+        <div class="space-y-2 row-span-3 w-full md:px-10 mt-4">
           <img src="./images/whychoose1.png" alt="">
         </div>
         <!-- row-3 -->
