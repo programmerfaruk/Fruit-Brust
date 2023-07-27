@@ -17,27 +17,33 @@
     .lato {
       font-family: 'Lato', sans-serif;
     }
+
+    .header {
+      @media (min-width: 640px) display: none;
+    }
   </style>
 </head>
 <!-- body section starts here -->
 
 <body class="lato">
   <!-- header section starts here -->
-  <header class="max-w-7xl mx-auto bg-[#F85559]   rounded-full my-10 flex items-center justify-between px-10">
-    <div class="flex gap-5 p-6 font-semibold list-none text-white ">
-      <li><a class="hover:text-black" href="">Home</a></li>
-      <li><a class="hover:text-black" href="">About Us</a></li>
-      <li><a class="hover:text-black" href="">Shop</a></li>
-      <li><a class="hover:text-black" href="">All Fruits</a></li>
-    </div>
-    <div class="flex gap-4 justify-center items-center">
-      <img class="w-5 lg:w-10 md:10" src="./images/logo.png" alt="">
-      <h1 class="font-extrabold text-xs md:text-xl lg:text-3xl text-white">Fruit Burst</h1>
-    </div>
-    <div class="relative ">
-      <input type="text" placeholder="Search here" class="lg:px-2 py-1 rounded-full w-full " />
-      <img class="absolute right-3 top-2 w-4" src="./images/icon/search-icon.svg" alt="">
-    </div>
+  <header>
+    <nav class="max-w-7xl mx-auto bg-[#F85559] rounded-full my-10 flex items-center justify-between px-10 header">
+      <div class="flex gap-5 p-6 font-semibold list-none text-white">
+        <li><a class="hover:text-black" href="">Home</a></li>
+        <li><a class="hover:text-black" href="">About Us</a></li>
+        <li><a class="hover:text-black" href="">Shop</a></li>
+        <li><a class="hover:text-black" href="">All Fruits</a></li>
+      </div>
+      <div class="flex gap-4 justify-center items-center">
+        <img class="w-5 lg:w-10 md:10" src="./images/logo.png" alt="">
+        <h1 class="font-extrabold text-xs md:text-xl lg:text-3xl text-white">Fruit Burst</h1>
+      </div>
+      <div class="relative ">
+        <input type="text" placeholder="Search here" class="lg:px-2 py-1 rounded-full w-full " />
+        <img class="absolute right-3 top-2 w-4" src="./images/icon/search-icon.svg" alt="">
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -223,20 +229,20 @@
     </section>
 
     <!-- team section starts here -->
-    <section
-      class=" bg-[url(./images/team.png)] bg-cover max-w-7xl mx-auto my-20 text-white bg-no-repeat rounded-xl ">
+    <section class=" bg-[url(./images/team.png)] bg-cover max-w-7xl mx-auto my-20 text-white bg-no-repeat rounded-xl ">
 
       <div class="bg-black p-40 bg-opacity-50">
         <div class="text-center space-y-2">
           <h2 class="text-5xl font-extrabold hover:text-red-600">Meet the team section</h2>
-          <p class="w-3/4 mx-auto text-base font-thin">Contrary to popular belief, is not simply random text. It has roots
+          <p class="w-3/4 mx-auto text-base font-thin">Contrary to popular belief, is not simply random text. It has
+            roots
             in a piece of
             classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-5 lg:gap-10 justify-center md:p-5 lg:5 p-2">
-  
-  
-  
+
+
+
           <!-- cards starts here -->
           <div class="p-2 md:p-5 lg:p-7 rounded shadow-sm space-y-2 text-center">
             <div class="avatar">
@@ -301,11 +307,49 @@
     <section class="max-w-7xl mx-auto p-10">
       <div class="text-center space-y-2">
         <h3 class="font-bold text-4xl hover:text-red-600">Why Choose Us</h3>
-        <p class="w-3/4 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        <p class="w-3/4 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of
+          classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
-      <div class="grid grid-cols-3">
-        <div>
-
+      <div class="grid grid-rows-1 md:grid-rows-3 grid-rows-3 md:grid-cols-3 lg:grid-cols-3 grid-cols-1 max-w-7xl mx-auto p-10 gap-8">
+        <!-- row-1 -->
+        <div class="space-y-2 ">
+          <h4 class="font-extrabold text-2xl">Dedicated Team</h4>
+          <hr class="w-24 border-t-2 border-gray-600 my-2">
+          <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+        <!-- row-2 -->
+        <div class="space-y-2 row-span-3 w-full mt-4">
+          <img src="./images/whychoose1.png" alt="">
+        </div>
+        <!-- row-3 -->
+        <div class="space-y-2 ">
+          <h4 class="font-extrabold text-2xl">Integrated Supplier</h4>
+          <hr class="w-24 border-t-2 border-gray-600 my-2">
+          <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+        <!-- row-4 -->
+        <div class="space-y-2">
+          <h4 class="font-extrabold text-2xl">Fresh is Best</h4>
+          <hr class="w-24 border-t-2 border-gray-600 my-2">
+          <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+        <!-- row-6 -->
+        <div class="space-y-2">
+          <h4 class="font-extrabold text-2xl">Sustainable Practice</h4>
+          <hr class="w-24 border-t-2 border-gray-600 my-2">
+          <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+        <!-- row 7-->
+        <div class="space-y-2">
+          <h4 class="font-extrabold text-2xl">Gift Certificates</h4>
+          <hr class="w-24 border-t-2 border-gray-600 my-2">
+          <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+        <!-- row 9 -->
+        <div class="space-y-2 ">
+          <h4 class="font-extrabold text-2xl">The Benefits Only</h4>
+          <hr class="w-24 border-t-2 border-gray-600 my-2">
+          <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
       </div>
     </section>
