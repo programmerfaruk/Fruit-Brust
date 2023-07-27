@@ -43,7 +43,43 @@
       </div>
     </nav>
   </header>
-
+  <!-- mobile header -->
+  <div class="md:hidden">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="">Home</a></li>
+            <li><a href="">About US</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href=""> AllFruits</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl text-center hover:text-red-700">Fruits Burst</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Item 1</a></li>
+          <li tabindex="0">
+            <details>
+              <summary>Parent</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <img class="w-12 px-2" src="./images/logo.png" alt="">
+      </div>
+    </div>
+  </div>
   <main>
     <!-- carousel section -->
     <section>
@@ -134,7 +170,7 @@
     <!-- deal section starts here -->
     <section class="flex flex-col lg:flex-row justify-center max-w-6xl mx-auto">
       <div class="flex-1 text-center lg:text-left space-y-2 justify-center py-10 md:p-10 lg:p-10">
-        <h2 class="text-4xl font-semibold text-center hover:text-red-600">Deal of the day</h2>
+        <h2 class="text-3xl font-semibold md:text-4xl md:font-semibold text-center hover:text-red-600">Deal of the day</h2>
         <p class="w-3/4 font-extralight text-sm md:text-center mx-auto">Contrary to popular belief, is not simply random
           text. It has roots in
           a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -359,14 +395,14 @@
 
       <div class="bg-black py-20 md:30 lg:p-40 bg-opacity-50">
         <div class="text-center space-y-2">
-          <h2 class="text-5xl font-extrabold hover:text-red-600">Meet the team section</h2>
+          <h2 class="text-3xl font-bold md:text-5xl md:font-extrabold hover:text-red-600">Meet the team section</h2>
           <p class="w-3/4 mx-auto text-base font-thin">Contrary to popular belief, is not simply random text. It has
             roots
             in a piece of
             classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3  md:gap-5 lg:gap-10 justify-center md:p-5 lg:5 p-2">
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  md:gap-5 lg:gap-10 justify-center md:p-5 lg:5 p-2">
 
           <!-- cards starts here -->
           <div class="p-2 md:p-5 lg:p-7 rounded shadow-sm space-y-2 text-center">
