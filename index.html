@@ -24,7 +24,7 @@
 
   <!-- header section starts here -->
   <header class="hidden md:block lg:block">
-    <nav class=" lg:max-w-6xl mx-auto bg-[#F85559] rounded-full my-10 flex items-center justify-between px-10 ">
+    <nav class=" lg:max-w-6xl md:max-w-5xl mx-auto bg-[#F85559] rounded-full my-10 flex items-center justify-between px-10 ">
       <div class=" flex gap-5 p-6 font-semibold list-none text-white">
         <li><a class="hover:text-black" href="">Home</a></li>
         <li><a class="hover:text-black" href="">About Us</a></li>
@@ -45,7 +45,7 @@
   <main>
     <!-- carousel section -->
     <section class="relative">
-      <div class="lg:max-w-6xl mx-auto mb-40">
+      <div class="lg:max-w-6xl mx-auto md:mb-20 lg:mb-40">
        <!-- carousel-1 -->
         <div class="carousel w-full">
           <div id="slide1" class="carousel-item relative w-full space-y-2 bg-[url(./images/banner1.png)]">
@@ -112,21 +112,21 @@
       </div>
       <!-- overlap  Card  -->
       <div
-        class="max-w-6xl mx-auto flex gap-4 shadow-xl justify-between rounded-lg px-14 py-10 absolute -bottom-20 left-[230px] bg-white">
+        class="sm:hidden max-w-6xl mx-auto flex gap-4 shadow-xl justify-between rounded-lg px-14 py-10 absolute -bottom-20 left-[230px] bg-white">
         <img src="./images/fruit1.png" alt=""><img src="./images/fruit2.png" alt=""><img src="./images/fruit3.png"
           alt=""><img src="./images/fruit4.png" alt=""><img src="./images/fruit5.png" alt="  ">
       </div>
     </section>
 
     <!-- deal section starts here -->
-    <section class="flex max-w-6xl mx-auto">
-      <div class="flex-1 text-left  space-y-2 justify-center p-10">
+    <section class="flex flex-col lg:flex-row justify-center max-w-6xl mx-auto">
+      <div class="flex-1 text-center lg:text-left space-y-2 justify-center md:lg:p-10">
         <h2 class="text-4xl font-semibold hover:text-red-600">Deal of the day</h2>
-        <p class="w-3/4 font-extralight text-sm">Contrary to popular belief, is not simply random text. It has roots in
+        <p class="w-3/4 font-extralight text-sm md:text-center mx-auto">Contrary to popular belief, is not simply random text. It has roots in
           a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
       <!-- countdown -->
-      <div class="flex-1 ">
+      <div class="flex-1 md:px-10 md:mx-auto">
         <div class="grid grid-flow-col gap-5 text-center auto-cols-max p-10 justify-end items-center">
 
           <div class="flex flex-col">
@@ -417,7 +417,7 @@
           classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
       <div
-        class="grid grid-rows-1 grid-cols-1 md:grid-rows-1 grid-rows-3 md:grid-cols-1 lg:grid-cols-3  max-w-7xl mx-auto p-10 gap-8">
+        class="grid grid-rows-1 grid-cols-1 md:grid-rows-1 lg:grid-rows-3 md:grid-cols-1 lg:grid-cols-3  max-w-7xl mx-auto p-10 gap-8">
         <!-- row-1 -->
         <div class="space-y-2 ">
           <h4 class="font-extrabold text-2xl hover:text-red-600">Dedicated Team</h4>
@@ -464,7 +464,7 @@
 
 
   <!-- footer section starts here -->
-  <footer class="bg-black w-full  lg:py-10 ">
+  <footer class="bg-black w-full md:pt-10 lg:py-10  md:space-y-4">
     <div class="flex md:gap-5 gap-2 items-center justify-center md:max-w-1/2 lg:py-10 ">
       <h2 class="md:text-3xl font-semibold text-white hover:text-red-600">Fruit Burst</h2>
       <img class="w-[40px]" src="./images/logo.png" alt="">
